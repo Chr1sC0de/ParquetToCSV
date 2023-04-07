@@ -10,6 +10,8 @@ def main():
 
     if len(uploaded_files) > 0:
         uploaded_files.sort(key=lambda x:x.name)
+        st.write("Sorted files")
+        st.write(uploaded_files)
         # Read the uploaded Parquet file into a Pandas DataFrame
 
         with st.spinner("Converting files to CSV..."):
